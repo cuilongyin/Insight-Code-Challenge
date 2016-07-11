@@ -1,1 +1,0 @@
-/usr/bin/c++    -std=c++11   CMakeFiles/median_degree.dir/source/main.cpp.o CMakeFiles/median_degree.dir/source/function.cpp.o  -o median_degree -rdynamic 
