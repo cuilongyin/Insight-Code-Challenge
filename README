@@ -1,0 +1,35 @@
+Well I passed the test.sh this is a pure C++ program.
+
+
+You should be able to run the run.sh to activate the binary file generate by Cmake and make processes.
+
+I remember I filled "500 lines of codes is the maximum lines of codes I had ever worked" when applying, and for this chanllenge I wrote like 1000 lines or more.
+
+Anyway, you probably won't read this since there is no extra library required.
+
+
+The idea in my program is that:
+
+	1, extract information from the .txt file into three RBTrees.
+		One is about the time each relationship has.
+		One is about the names that are active in the relationships.
+		One is about the degree each name owns.
+
+	2, first check if the new relationship is too old to be recored
+		if yes, don't care
+		if no, check if the relatipnship is already there
+			if yes, then put the new time in the time RBtree but don't touch the other two trees.
+			if no, record them all.
+
+	3, dump all the nodes that have time older than the limit in the time tree
+		check if this dumped relationship is active is the tag tree
+		if yes, shut it down and extrac the name, and then decrease the degree in the degree tree
+   		if no, don't care
+
+	4 each turn, extract all the degree in the degree tree, use algorithem library to find the median O(n) coplexity.
+
+Overall, the time complexity should be faster than nlogn;
+
+I haven't slept for a long time... really don't want to debug anymore... sorry about the mess in some of the codes.. 
+
+O(-_-)O 
